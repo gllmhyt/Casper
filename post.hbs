@@ -114,11 +114,10 @@ into the {body} of the default.hbs template --}}
                 {{> subscribe-form}}
             {{/if}}
 
-            {{!--
-            <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
-            </section>
-            --}}
+            {{!-- Isso (hardcoded) --}}
+            <script data-isso="https://isso.postblue.info/" data-isso-gravatar="false" data-isso-avatar="false"
+                src="https://isso.postblue.info/js/embed.min.js"></script>
+            <section class="post-full-comments" id="isso-thread"></section>
 
         </article>
 
