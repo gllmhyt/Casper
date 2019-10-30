@@ -87,7 +87,9 @@
     {{!-- Script for ghostHunter integration --}}
     <script>
         $("#search-field").ghostHunter({
-            results: "#search-results"
+            results: "#search-results",
+            onKeyUp  : true,
+            result_template     : "<a id='gh-{{ref}}' class='gh-search-item' href='{{link}}'><p><h2>{{title}}</h2><h4>{{PubDate}}</h4></p></a>"
         });
     </script>
 
